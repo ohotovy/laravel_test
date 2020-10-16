@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api', 'App\Http\Controllers\ApiController@index');
+Route::get('/api', 'ApiController@index');
