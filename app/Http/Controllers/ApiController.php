@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Classes\ThisProject\ThisProject;
+
 class ApiController extends Controller
 
 {
@@ -17,5 +19,11 @@ class ApiController extends Controller
             'errors' => [],
             'data' => []
         ];
+    }
+
+    public function projectInfo()
+    {
+        $owner = new ThisProject;
+        return (array)$owner;
     }
 }

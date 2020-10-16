@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/api', 'ApiController@index');
+Route::get('/api/project-info', 'ApiController@projectInfo');
