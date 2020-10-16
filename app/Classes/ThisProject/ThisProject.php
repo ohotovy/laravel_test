@@ -14,4 +14,9 @@ class ThisProject
         $this->name = config('app.name');
         $this->owner = new ProjectOwner;
     }
+
+    public static function getBaseUrl()
+    {
+        return config('app.url');
+    }
 }
